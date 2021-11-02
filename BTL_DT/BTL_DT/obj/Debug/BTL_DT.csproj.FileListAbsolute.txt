@@ -1,0 +1,10 @@
+D:\Study\C#\BTL\BTL_DT\BTL_DT\bin\Debug\BTL_DT.exe.config
+D:\Study\C#\BTL\BTL_DT\BTL_DT\bin\Debug\BTL_DT.exe
+D:\Study\C#\BTL\BTL_DT\BTL_DT\bin\Debug\BTL_DT.pdb
+D:\Study\C#\BTL\BTL_DT\BTL_DT\obj\Debug\BTL_DT.Form1.resources
+D:\Study\C#\BTL\BTL_DT\BTL_DT\obj\Debug\BTL_DT.Properties.Resources.resources
+D:\Study\C#\BTL\BTL_DT\BTL_DT\obj\Debug\BTL_DT.csproj.GenerateResource.cache
+D:\Study\C#\BTL\BTL_DT\BTL_DT\obj\Debug\BTL_DT.csproj.CoreCompileInputs.cache
+D:\Study\C#\BTL\BTL_DT\BTL_DT\obj\Debug\BTL_DT.exe
+D:\Study\C#\BTL\BTL_DT\BTL_DT\obj\Debug\BTL_DT.pdb
+D:\Study\C#\BTL\BTL_DT\BTL_DT\obj\Debug\BTL_DT.csproj.AssemblyReference.cache
