@@ -9,3 +9,4 @@ D:\Study\C#\BTL\BTL_DT\BTL_DT\obj\Debug\BTL_DT.pdb
 D:\Study\C#\BTL\BTL_DT\BTL_DT\obj\Debug\BTL_DT.csproj.AssemblyReference.cache
 D:\Study\C#\BTL\BTL_DT\BTL_DT\obj\Debug\BTL_DT.Splash.resources
 D:\Study\C#\BTL\BTL_DT\BTL_DT\obj\Debug\BTL_DT.frmMain.resources
+D:\Study\C#\BTL\BTL_DT\BTL_DT\obj\Debug\BTL_DT.frmQLDienThoai.resources
