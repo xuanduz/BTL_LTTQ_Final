@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace BTL_DT
 {
-    public partial class frmMain : Form
+    public partial class frmMain : MetroFramework.Forms.MetroForm
     {
         public frmMain()
         {
@@ -21,10 +21,6 @@ namespace BTL_DT
         {
 
         }
-        
-        private void label1_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
+
     }
 }

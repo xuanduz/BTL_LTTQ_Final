@@ -10,3 +10,6 @@ D:\Study\C#\BTL\BTL_DT\BTL_DT\obj\Debug\BTL_DT.csproj.AssemblyReference.cache
 D:\Study\C#\BTL\BTL_DT\BTL_DT\obj\Debug\BTL_DT.Splash.resources
 D:\Study\C#\BTL\BTL_DT\BTL_DT\obj\Debug\BTL_DT.frmMain.resources
 D:\Study\C#\BTL\BTL_DT\BTL_DT\obj\Debug\BTL_DT.frmQLDienThoai.resources
+D:\Study\C#\BTL\BTL_DT\BTL_DT\bin\Debug\MetroFramework.Design.dll
+D:\Study\C#\BTL\BTL_DT\BTL_DT\bin\Debug\MetroFramework.dll
+D:\Study\C#\BTL\BTL_DT\BTL_DT\bin\Debug\MetroFramework.Fonts.dll
