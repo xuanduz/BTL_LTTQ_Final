@@ -13,3 +13,20 @@ D:\Study\C#\BTL\BTL_DT\BTL_DT\obj\Debug\BTL_DT.frmQLDienThoai.resources
 D:\Study\C#\BTL\BTL_DT\BTL_DT\bin\Debug\MetroFramework.Design.dll
 D:\Study\C#\BTL\BTL_DT\BTL_DT\bin\Debug\MetroFramework.dll
 D:\Study\C#\BTL\BTL_DT\BTL_DT\bin\Debug\MetroFramework.Fonts.dll
+D:\năm hai\BTL_LTTQ\BTL_LTTQ_Final\BTL_DT\BTL_DT\bin\Debug\BTL_DT.exe.config
+D:\năm hai\BTL_LTTQ\BTL_LTTQ_Final\BTL_DT\BTL_DT\bin\Debug\BTL_DT.exe
+D:\năm hai\BTL_LTTQ\BTL_LTTQ_Final\BTL_DT\BTL_DT\bin\Debug\BTL_DT.pdb
+D:\năm hai\BTL_LTTQ\BTL_LTTQ_Final\BTL_DT\BTL_DT\bin\Debug\MetroFramework.Design.dll
+D:\năm hai\BTL_LTTQ\BTL_LTTQ_Final\BTL_DT\BTL_DT\bin\Debug\MetroFramework.dll
+D:\năm hai\BTL_LTTQ\BTL_LTTQ_Final\BTL_DT\BTL_DT\bin\Debug\MetroFramework.Fonts.dll
+D:\năm hai\BTL_LTTQ\BTL_LTTQ_Final\BTL_DT\BTL_DT\obj\Debug\BTL_DT.csproj.AssemblyReference.cache
+D:\năm hai\BTL_LTTQ\BTL_LTTQ_Final\BTL_DT\BTL_DT\obj\Debug\BTL_DT.frmMain.resources
+D:\năm hai\BTL_LTTQ\BTL_LTTQ_Final\BTL_DT\BTL_DT\obj\Debug\BTL_DT.frmQLDienThoai.resources
+D:\năm hai\BTL_LTTQ\BTL_LTTQ_Final\BTL_DT\BTL_DT\obj\Debug\BTL_DT.Properties.Resources.resources
+D:\năm hai\BTL_LTTQ\BTL_LTTQ_Final\BTL_DT\BTL_DT\obj\Debug\BTL_DT.Splash.resources
+D:\năm hai\BTL_LTTQ\BTL_LTTQ_Final\BTL_DT\BTL_DT\obj\Debug\BTL_DT.csproj.GenerateResource.cache
+D:\năm hai\BTL_LTTQ\BTL_LTTQ_Final\BTL_DT\BTL_DT\obj\Debug\BTL_DT.csproj.CoreCompileInputs.cache
+D:\năm hai\BTL_LTTQ\BTL_LTTQ_Final\BTL_DT\BTL_DT\obj\Debug\BTL_DT.csproj.CopyComplete
+D:\năm hai\BTL_LTTQ\BTL_LTTQ_Final\BTL_DT\BTL_DT\obj\Debug\BTL_DT.exe
+D:\năm hai\BTL_LTTQ\BTL_LTTQ_Final\BTL_DT\BTL_DT\obj\Debug\BTL_DT.pdb
+D:\năm hai\BTL_LTTQ\BTL_LTTQ_Final\BTL_DT\BTL_DT\obj\Debug\BTL_DT.frmQLHDB.resources

@@ -34,7 +34,14 @@ namespace BTL_DT
 
         private void metroTile9_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Open form QLDienThoai");
+            frmQLDienThoai frm = new frmQLDienThoai();
+            frm.Show();
+        }
+
+        private void metroTile5_Click(object sender, EventArgs e)
+        {
+            frmQLHDB frm = new frmQLHDB();          
+            frm.Show();
         }
     }
 }
