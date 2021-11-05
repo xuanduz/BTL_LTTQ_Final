@@ -19,8 +19,22 @@ namespace BTL_DT
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            this.MinimumSize = new Size(1000, 600);
+        }
+
+        private void metroProgressSpinner1_Click(object sender, EventArgs e)
+        {
 
         }
 
+        private void metroTile11_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void metroTile9_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Open form QLDienThoai");
+        }
     }
 }
