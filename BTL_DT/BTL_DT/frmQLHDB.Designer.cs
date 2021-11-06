@@ -30,10 +30,10 @@ namespace BTL_DT
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblTieuDe = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.txtTimKiem = new System.Windows.Forms.TextBox();
+            this.txtTimKiemMHD = new System.Windows.Forms.TextBox();
             this.label20 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.cboMaKH = new System.Windows.Forms.ComboBox();
@@ -93,7 +93,7 @@ namespace BTL_DT
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.lblTieuDe);
             this.panel1.Controls.Add(this.groupBox1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -101,17 +101,17 @@ namespace BTL_DT
             this.panel1.Size = new System.Drawing.Size(1044, 56);
             this.panel1.TabIndex = 0;
             // 
-            // label1
+            // lblTieuDe
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Blue;
-            this.label1.Location = new System.Drawing.Point(334, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(397, 32);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Quản Lý Hóa Đơn Bán Hàng";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.lblTieuDe.AutoSize = true;
+            this.lblTieuDe.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTieuDe.ForeColor = System.Drawing.Color.Blue;
+            this.lblTieuDe.Location = new System.Drawing.Point(334, 9);
+            this.lblTieuDe.Name = "lblTieuDe";
+            this.lblTieuDe.Size = new System.Drawing.Size(397, 32);
+            this.lblTieuDe.TabIndex = 3;
+            this.lblTieuDe.Text = "Quản Lý Hóa Đơn Bán Hàng";
+            this.lblTieuDe.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // groupBox1
             // 
@@ -124,7 +124,7 @@ namespace BTL_DT
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.txtTimKiem);
+            this.panel2.Controls.Add(this.txtTimKiemMHD);
             this.panel2.Controls.Add(this.btnTimKiem);
             this.panel2.Controls.Add(this.label20);
             this.panel2.Controls.Add(this.btnthoat);
@@ -140,21 +140,22 @@ namespace BTL_DT
             this.panel2.Size = new System.Drawing.Size(1044, 92);
             this.panel2.TabIndex = 1;
             // 
-            // txtTimKiem
+            // txtTimKiemMHD
             // 
-            this.txtTimKiem.Location = new System.Drawing.Point(172, 55);
-            this.txtTimKiem.Name = "txtTimKiem";
-            this.txtTimKiem.Size = new System.Drawing.Size(205, 22);
-            this.txtTimKiem.TabIndex = 9;
+            this.txtTimKiemMHD.Location = new System.Drawing.Point(139, 55);
+            this.txtTimKiemMHD.Name = "txtTimKiemMHD";
+            this.txtTimKiemMHD.Size = new System.Drawing.Size(151, 22);
+            this.txtTimKiemMHD.TabIndex = 9;
+            this.txtTimKiemMHD.TextChanged += new System.EventHandler(this.txtTimKiemMHD_TextChanged);
             // 
             // label20
             // 
             this.label20.AutoSize = true;
             this.label20.Location = new System.Drawing.Point(46, 58);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(120, 17);
+            this.label20.Size = new System.Drawing.Size(87, 17);
             this.label20.TabIndex = 7;
-            this.label20.Text = "Mã, Tên hóa đơn:";
+            this.label20.Text = "Mã hóa đơn:";
             // 
             // groupBox2
             // 
@@ -532,6 +533,7 @@ namespace BTL_DT
             this.dgvQLHDB.RowTemplate.Height = 24;
             this.dgvQLHDB.Size = new System.Drawing.Size(1038, 233);
             this.dgvQLHDB.TabIndex = 1;
+            this.dgvQLHDB.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvQLHDB_CellClick);
             // 
             // splitter3
             // 
@@ -546,13 +548,14 @@ namespace BTL_DT
             // 
             this.btnTimKiem.Image = global::BTL_DT.Properties.Resources.search;
             this.btnTimKiem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTimKiem.Location = new System.Drawing.Point(407, 49);
+            this.btnTimKiem.Location = new System.Drawing.Point(317, 52);
             this.btnTimKiem.Name = "btnTimKiem";
             this.btnTimKiem.Size = new System.Drawing.Size(120, 28);
             this.btnTimKiem.TabIndex = 8;
             this.btnTimKiem.Text = "Tìm kiếm";
             this.btnTimKiem.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnTimKiem.UseVisualStyleBackColor = true;
+            this.btnTimKiem.Click += new System.EventHandler(this.btnTimKiem_Click);
             // 
             // btnthoat
             // 
@@ -672,7 +675,7 @@ namespace BTL_DT
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblTieuDe;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.GroupBox groupBox2;
@@ -704,7 +707,7 @@ namespace BTL_DT
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox txtTimKiem;
+        private System.Windows.Forms.TextBox txtTimKiemMHD;
         private System.Windows.Forms.Button btnTimKiem;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Button btnthoat;
