@@ -30,3 +30,4 @@ D:\năm hai\BTL_LTTQ\BTL_LTTQ_Final\BTL_DT\BTL_DT\obj\Debug\BTL_DT.csproj.CopyCo
 D:\năm hai\BTL_LTTQ\BTL_LTTQ_Final\BTL_DT\BTL_DT\obj\Debug\BTL_DT.exe
 D:\năm hai\BTL_LTTQ\BTL_LTTQ_Final\BTL_DT\BTL_DT\obj\Debug\BTL_DT.pdb
 D:\năm hai\BTL_LTTQ\BTL_LTTQ_Final\BTL_DT\BTL_DT\obj\Debug\BTL_DT.frmQLHDB.resources
+D:\Study\C#\BTL\BTL_DT\BTL_DT\obj\Debug\BTL_DT.frmQLHDB.resources
