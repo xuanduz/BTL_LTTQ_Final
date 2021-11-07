@@ -12,7 +12,7 @@ namespace BTL_DT
     class DataBaseProcess
     {
         //Khai báo biến toàn cục, bạn phải thay đổi chuối kết nối phù hợp
-        string strConnect = "Data Source=NGUYENDUC;Initial Catalog=DienThoai;Integrated Security=True";
+        string strConnect = "Data Source=NGUYENDUC;Initial Catalog=QLDT;Integrated Security=True";
         SqlConnection sqlConnect = null;
         //Phương thức mở kết nối
         void OpenConnect()

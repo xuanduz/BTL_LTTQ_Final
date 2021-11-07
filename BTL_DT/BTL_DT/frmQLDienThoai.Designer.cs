@@ -34,10 +34,9 @@ namespace BTL_DT
             this.grbTSKT = new System.Windows.Forms.GroupBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblAnh = new System.Windows.Forms.Label();
-            this.txtBoNho = new System.Windows.Forms.TextBox();
             this.lblBoNho = new System.Windows.Forms.Label();
-            this.rtbCPU = new System.Windows.Forms.RichTextBox();
-            this.lblCPU = new System.Windows.Forms.Label();
+            this.rtbHDH_CPU = new System.Windows.Forms.RichTextBox();
+            this.lblHDH_CPU = new System.Windows.Forms.Label();
             this.rtbGhiChu = new System.Windows.Forms.RichTextBox();
             this.lblGhiChu = new System.Windows.Forms.Label();
             this.rtbCamera = new System.Windows.Forms.RichTextBox();
@@ -72,6 +71,7 @@ namespace BTL_DT
             this.panel2 = new System.Windows.Forms.Panel();
             this.grbDS = new System.Windows.Forms.GroupBox();
             this.dgvDSDT = new System.Windows.Forms.DataGridView();
+            this.rtbBoNho = new System.Windows.Forms.RichTextBox();
             this.panel1.SuspendLayout();
             this.grbTSKT.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -95,12 +95,12 @@ namespace BTL_DT
             // grbTSKT
             // 
             this.grbTSKT.BackColor = System.Drawing.Color.Transparent;
+            this.grbTSKT.Controls.Add(this.rtbBoNho);
             this.grbTSKT.Controls.Add(this.pictureBox1);
             this.grbTSKT.Controls.Add(this.lblAnh);
-            this.grbTSKT.Controls.Add(this.txtBoNho);
             this.grbTSKT.Controls.Add(this.lblBoNho);
-            this.grbTSKT.Controls.Add(this.rtbCPU);
-            this.grbTSKT.Controls.Add(this.lblCPU);
+            this.grbTSKT.Controls.Add(this.rtbHDH_CPU);
+            this.grbTSKT.Controls.Add(this.lblHDH_CPU);
             this.grbTSKT.Controls.Add(this.rtbGhiChu);
             this.grbTSKT.Controls.Add(this.lblGhiChu);
             this.grbTSKT.Controls.Add(this.rtbCamera);
@@ -149,51 +149,43 @@ namespace BTL_DT
             this.lblAnh.TabIndex = 31;
             this.lblAnh.Text = "Ảnh";
             // 
-            // txtBoNho
-            // 
-            this.txtBoNho.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtBoNho.Location = new System.Drawing.Point(207, 280);
-            this.txtBoNho.Name = "txtBoNho";
-            this.txtBoNho.Size = new System.Drawing.Size(128, 23);
-            this.txtBoNho.TabIndex = 7;
-            // 
             // lblBoNho
             // 
             this.lblBoNho.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblBoNho.AutoSize = true;
             this.lblBoNho.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-            this.lblBoNho.Location = new System.Drawing.Point(72, 283);
+            this.lblBoNho.Location = new System.Drawing.Point(359, 41);
             this.lblBoNho.Name = "lblBoNho";
             this.lblBoNho.Size = new System.Drawing.Size(53, 17);
             this.lblBoNho.TabIndex = 29;
             this.lblBoNho.Text = "Bộ nhớ";
             // 
-            // rtbCPU
+            // rtbHDH_CPU
             // 
-            this.rtbCPU.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.rtbCPU.Location = new System.Drawing.Point(721, 181);
-            this.rtbCPU.Name = "rtbCPU";
-            this.rtbCPU.Size = new System.Drawing.Size(200, 115);
-            this.rtbCPU.TabIndex = 11;
-            this.rtbCPU.Text = "";
+            this.rtbHDH_CPU.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.rtbHDH_CPU.Location = new System.Drawing.Point(729, 238);
+            this.rtbHDH_CPU.Name = "rtbHDH_CPU";
+            this.rtbHDH_CPU.Size = new System.Drawing.Size(200, 50);
+            this.rtbHDH_CPU.TabIndex = 11;
+            this.rtbHDH_CPU.Text = "";
             // 
-            // lblCPU
+            // lblHDH_CPU
             // 
-            this.lblCPU.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lblCPU.AutoSize = true;
-            this.lblCPU.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-            this.lblCPU.Location = new System.Drawing.Point(653, 181);
-            this.lblCPU.Name = "lblCPU";
-            this.lblCPU.Size = new System.Drawing.Size(36, 17);
-            this.lblCPU.TabIndex = 27;
-            this.lblCPU.Text = "CPU";
+            this.lblHDH_CPU.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblHDH_CPU.AutoSize = true;
+            this.lblHDH_CPU.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.lblHDH_CPU.Location = new System.Drawing.Point(652, 238);
+            this.lblHDH_CPU.Name = "lblHDH_CPU";
+            this.lblHDH_CPU.Size = new System.Drawing.Size(71, 17);
+            this.lblHDH_CPU.TabIndex = 27;
+            this.lblHDH_CPU.Text = "HDH-CPU";
             // 
             // rtbGhiChu
             // 
             this.rtbGhiChu.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.rtbGhiChu.Location = new System.Drawing.Point(721, 32);
+            this.rtbGhiChu.Location = new System.Drawing.Point(729, 38);
             this.rtbGhiChu.Name = "rtbGhiChu";
-            this.rtbGhiChu.Size = new System.Drawing.Size(200, 115);
+            this.rtbGhiChu.Size = new System.Drawing.Size(200, 149);
             this.rtbGhiChu.TabIndex = 10;
             this.rtbGhiChu.Text = "";
             // 
@@ -202,7 +194,7 @@ namespace BTL_DT
             this.lblGhiChu.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblGhiChu.AutoSize = true;
             this.lblGhiChu.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-            this.lblGhiChu.Location = new System.Drawing.Point(653, 37);
+            this.lblGhiChu.Location = new System.Drawing.Point(652, 41);
             this.lblGhiChu.Name = "lblGhiChu";
             this.lblGhiChu.Size = new System.Drawing.Size(57, 17);
             this.lblGhiChu.TabIndex = 25;
@@ -211,9 +203,9 @@ namespace BTL_DT
             // rtbCamera
             // 
             this.rtbCamera.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.rtbCamera.Location = new System.Drawing.Point(432, 186);
+            this.rtbCamera.Location = new System.Drawing.Point(431, 243);
             this.rtbCamera.Name = "rtbCamera";
-            this.rtbCamera.Size = new System.Drawing.Size(200, 115);
+            this.rtbCamera.Size = new System.Drawing.Size(200, 50);
             this.rtbCamera.TabIndex = 9;
             this.rtbCamera.Text = "";
             // 
@@ -222,7 +214,7 @@ namespace BTL_DT
             this.lblCamera.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblCamera.AutoSize = true;
             this.lblCamera.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-            this.lblCamera.Location = new System.Drawing.Point(360, 181);
+            this.lblCamera.Location = new System.Drawing.Point(359, 238);
             this.lblCamera.Name = "lblCamera";
             this.lblCamera.Size = new System.Drawing.Size(57, 17);
             this.lblCamera.TabIndex = 23;
@@ -231,9 +223,9 @@ namespace BTL_DT
             // rtbManHinh
             // 
             this.rtbManHinh.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.rtbManHinh.Location = new System.Drawing.Point(432, 34);
+            this.rtbManHinh.Location = new System.Drawing.Point(431, 139);
             this.rtbManHinh.Name = "rtbManHinh";
-            this.rtbManHinh.Size = new System.Drawing.Size(200, 115);
+            this.rtbManHinh.Size = new System.Drawing.Size(200, 50);
             this.rtbManHinh.TabIndex = 8;
             this.rtbManHinh.Text = "";
             // 
@@ -242,7 +234,7 @@ namespace BTL_DT
             this.lblManHinh.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblManHinh.AutoSize = true;
             this.lblManHinh.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-            this.lblManHinh.Location = new System.Drawing.Point(360, 37);
+            this.lblManHinh.Location = new System.Drawing.Point(359, 142);
             this.lblManHinh.Name = "lblManHinh";
             this.lblManHinh.Size = new System.Drawing.Size(66, 17);
             this.lblManHinh.TabIndex = 20;
@@ -251,7 +243,7 @@ namespace BTL_DT
             // txtBaoHanh
             // 
             this.txtBaoHanh.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtBaoHanh.Location = new System.Drawing.Point(207, 238);
+            this.txtBaoHanh.Location = new System.Drawing.Point(195, 255);
             this.txtBaoHanh.Name = "txtBaoHanh";
             this.txtBaoHanh.Size = new System.Drawing.Size(128, 23);
             this.txtBaoHanh.TabIndex = 6;
@@ -261,7 +253,7 @@ namespace BTL_DT
             this.lblBaoHanh.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblBaoHanh.AutoSize = true;
             this.lblBaoHanh.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-            this.lblBaoHanh.Location = new System.Drawing.Point(72, 241);
+            this.lblBaoHanh.Location = new System.Drawing.Point(60, 258);
             this.lblBaoHanh.Name = "lblBaoHanh";
             this.lblBaoHanh.Size = new System.Drawing.Size(131, 17);
             this.lblBaoHanh.TabIndex = 18;
@@ -270,7 +262,7 @@ namespace BTL_DT
             // txtGia
             // 
             this.txtGia.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtGia.Location = new System.Drawing.Point(207, 190);
+            this.txtGia.Location = new System.Drawing.Point(195, 207);
             this.txtGia.Name = "txtGia";
             this.txtGia.Size = new System.Drawing.Size(128, 23);
             this.txtGia.TabIndex = 5;
@@ -281,7 +273,7 @@ namespace BTL_DT
             this.lblGia.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblGia.AutoSize = true;
             this.lblGia.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-            this.lblGia.Location = new System.Drawing.Point(72, 193);
+            this.lblGia.Location = new System.Drawing.Point(60, 210);
             this.lblGia.Name = "lblGia";
             this.lblGia.Size = new System.Drawing.Size(30, 17);
             this.lblGia.TabIndex = 16;
@@ -290,7 +282,7 @@ namespace BTL_DT
             // txtMau
             // 
             this.txtMau.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtMau.Location = new System.Drawing.Point(207, 147);
+            this.txtMau.Location = new System.Drawing.Point(195, 164);
             this.txtMau.Name = "txtMau";
             this.txtMau.Size = new System.Drawing.Size(128, 23);
             this.txtMau.TabIndex = 4;
@@ -300,7 +292,7 @@ namespace BTL_DT
             this.lblMau.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblMau.AutoSize = true;
             this.lblMau.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-            this.lblMau.Location = new System.Drawing.Point(72, 150);
+            this.lblMau.Location = new System.Drawing.Point(60, 167);
             this.lblMau.Name = "lblMau";
             this.lblMau.Size = new System.Drawing.Size(35, 17);
             this.lblMau.TabIndex = 14;
@@ -309,7 +301,7 @@ namespace BTL_DT
             // txtSoIMEI
             // 
             this.txtSoIMEI.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtSoIMEI.Location = new System.Drawing.Point(207, 106);
+            this.txtSoIMEI.Location = new System.Drawing.Point(195, 123);
             this.txtSoIMEI.Name = "txtSoIMEI";
             this.txtSoIMEI.Size = new System.Drawing.Size(128, 23);
             this.txtSoIMEI.TabIndex = 3;
@@ -319,7 +311,7 @@ namespace BTL_DT
             this.lblSoIMEI.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblSoIMEI.AutoSize = true;
             this.lblSoIMEI.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-            this.lblSoIMEI.Location = new System.Drawing.Point(72, 109);
+            this.lblSoIMEI.Location = new System.Drawing.Point(60, 126);
             this.lblSoIMEI.Name = "lblSoIMEI";
             this.lblSoIMEI.Size = new System.Drawing.Size(55, 17);
             this.lblSoIMEI.TabIndex = 12;
@@ -328,7 +320,7 @@ namespace BTL_DT
             // txtMaDT
             // 
             this.txtMaDT.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtMaDT.Location = new System.Drawing.Point(207, 34);
+            this.txtMaDT.Location = new System.Drawing.Point(195, 41);
             this.txtMaDT.Name = "txtMaDT";
             this.txtMaDT.Size = new System.Drawing.Size(128, 23);
             this.txtMaDT.TabIndex = 1;
@@ -338,7 +330,7 @@ namespace BTL_DT
             this.lblMaDT.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblMaDT.AutoSize = true;
             this.lblMaDT.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-            this.lblMaDT.Location = new System.Drawing.Point(72, 37);
+            this.lblMaDT.Location = new System.Drawing.Point(60, 44);
             this.lblMaDT.Name = "lblMaDT";
             this.lblMaDT.Size = new System.Drawing.Size(93, 17);
             this.lblMaDT.TabIndex = 10;
@@ -347,7 +339,7 @@ namespace BTL_DT
             // txtTenDT
             // 
             this.txtTenDT.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtTenDT.Location = new System.Drawing.Point(207, 71);
+            this.txtTenDT.Location = new System.Drawing.Point(195, 81);
             this.txtTenDT.Name = "txtTenDT";
             this.txtTenDT.Size = new System.Drawing.Size(128, 23);
             this.txtTenDT.TabIndex = 2;
@@ -357,7 +349,7 @@ namespace BTL_DT
             this.lblTenDT.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblTenDT.AutoSize = true;
             this.lblTenDT.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-            this.lblTenDT.Location = new System.Drawing.Point(72, 74);
+            this.lblTenDT.Location = new System.Drawing.Point(60, 84);
             this.lblTenDT.Name = "lblTenDT";
             this.lblTenDT.Size = new System.Drawing.Size(99, 17);
             this.lblTenDT.TabIndex = 8;
@@ -547,6 +539,15 @@ namespace BTL_DT
             this.dgvDSDT.Name = "dgvDSDT";
             this.dgvDSDT.Size = new System.Drawing.Size(1254, 201);
             this.dgvDSDT.TabIndex = 0;
+            this.dgvDSDT.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDSDT_CellClick);
+            // 
+            // rtbBoNho
+            // 
+            this.rtbBoNho.Location = new System.Drawing.Point(431, 38);
+            this.rtbBoNho.Name = "rtbBoNho";
+            this.rtbBoNho.Size = new System.Drawing.Size(200, 50);
+            this.rtbBoNho.TabIndex = 33;
+            this.rtbBoNho.Text = "";
             // 
             // frmQLDienThoai
             // 
@@ -599,10 +600,9 @@ namespace BTL_DT
         private System.Windows.Forms.Label lblGhiChu;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label lblAnh;
-        private System.Windows.Forms.TextBox txtBoNho;
         private System.Windows.Forms.Label lblBoNho;
-        private System.Windows.Forms.RichTextBox rtbCPU;
-        private System.Windows.Forms.Label lblCPU;
+        private System.Windows.Forms.RichTextBox rtbHDH_CPU;
+        private System.Windows.Forms.Label lblHDH_CPU;
         private System.Windows.Forms.Button btnThem;
         private System.Windows.Forms.Button btnHuy;
         private System.Windows.Forms.Button btnXoa;
@@ -617,5 +617,6 @@ namespace BTL_DT
         private System.Windows.Forms.TextBox txtTenDT_Search;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.RichTextBox rtbBoNho;
     }
 }
