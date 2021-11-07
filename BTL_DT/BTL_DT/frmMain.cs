@@ -34,12 +34,14 @@ namespace BTL_DT
 
         private void metroTile9_Click(object sender, EventArgs e)
         {
+            this.Hide();
             frmQLDienThoai frm = new frmQLDienThoai();
             frm.Show();
         }
 
         private void metroTile5_Click(object sender, EventArgs e)
         {
+            this.Hide();
             frmQLHDB frm = new frmQLHDB();          
             frm.Show();
         }
